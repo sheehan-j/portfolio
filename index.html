@@ -14,16 +14,64 @@
         <!-- Main Stylesheet -->
         <link rel="stylesheet" href="styles/styles.css">
 
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Animate on Scroll (AOS) -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!-- Boostrap JS -->
         <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha256-XDbijJp72GS2c+Ij234ZNJIyJ1Nv+9+HH1i28JuayMk=" crossorigin="anonymous"></script> -->
+
+        <!-- Inter Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
         <title>Jordan Sheehan</title>
         <!-- <link rel="shortcut icon" type="image/jpg" href="img/faviconlogo.png"/> -->
     </head>
     <body>
-        <h1>Jordan Sheehan</h1>
-    </body>
+        <header>
+            <!-- Main Navbar -->
+            <nav class="navbar navbar-expand py-3">
+                <div id="mainNavbar" class="collapse navbar-collapse justify-content-center">
+                    <ul class="navbar-nav pb-1 py-lg-0">
+                        <li class="nav-item my-2 m-lg-0 px-2 px-lg-3 px-xl-4"><a class="nav-link white active">Home</a></li>
+                        <li class="nav-item my-2 m-lg-0 px-2 px-lg-3 px-xl-4"><a class="nav-link white" href="projects.html">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+         </header>
+
+        <main>
+            <!-- Landing Container -->
+            <div class="container-fluid p-0 m-0" syle="margin-top: 0 !important">
+
+                <div class="home-landing-container d-flex">
+                    <!-- Text Container for Med Screens and Larger (>=768px)  -->
+                    <div class="landing-text-container left-justify d-none d-md-block my-auto">
+                        <div class="landing-title">Jordan Sheehan</div>
+                        <div class="landing-subtitle">Second-year CS Major at the University of Florida</div>
+                    </div>
+
+                    <!-- Text Container for Small Screens and Smaller (<=768px)  -->
+                    <div class="landing-text-container text-center center-justify d-block d-md-none my-auto mx-auto">
+                        <div class="landing-title">Jordan Sheehan</div>
+                        <div class="landing-subtitle">Second-year CS Major at the University of Florida</div>
+                    </div>
+
+                    <!-- Decorative Rectangles -->
+                    <div class="transparent-rectangle-1"></div>
+                    <div class="transparent-rectangle-2"></div>
+                    <div class="transparent-rectangle-3"></div>
+                </div>  
+
+                
+            </div>
+        </main>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+    </body> 
 </html>

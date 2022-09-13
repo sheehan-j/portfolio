@@ -1,3 +1,86 @@
-h1 {
-    color: red;
+$blue: #548CFF;
+$light-blue: #57D4FF;
+
+@mixin inter-light {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+@mixin inter-reg {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+@mixin inter-semi {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+@mixin inter-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+@mixin inter-extra-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+}
+
+@import "landing";
+@import "navbar";
+@import "animations";
+@import "projects";
+
+html {
+    font-size: 15px;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    &.hide {
+        opacity: 0;
+    }
+    height: 100%;
+}
+
+body::-webkit-scrollbar { width: 0 !important }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:focus-visible {
+    outline: none !important;
+}
+
+a {
+    text-decoration: none !important;
+    &:hover {
+        cursor: pointer !important;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 351px) and (max-width: 575px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    html {
+        font-size: 13px;
+    }
 }

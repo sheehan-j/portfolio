@@ -1,0 +1,22 @@
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+.nav-link {
+    @include inter-reg();
+    color: #303030;
+    font-size: 1rem;
+    padding: 0.25rem;
+    
+    &.white {
+        color: white;
+    }
+
+    &.active {
+        @include inter-semi();
+        border-bottom: 2px white solid;
+    }
+}

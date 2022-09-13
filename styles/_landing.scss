@@ -1,0 +1,93 @@
+.home-landing-container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient($blue, $light-blue);
+    position: relative;
+}
+
+.landing-text-container.left-justify {
+    margin-left: 5rem;
+}
+
+.landing-title {
+    @include inter-extra-bold();
+    font-size: 5rem;
+    color: white;
+    opacity: 0;
+    margin:0;
+    line-height: 100%;
+    
+    animation: slideUp 1s;
+    -webkit-animation: slideUp 1s;
+    -moz-animation: slideUp 1s;
+    -o-animation: slideUp 1s;
+    -ms-animation: slideUp 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0;
+    animation-fill-mode: forwards;
+}
+
+.landing-subtitle {
+    @include inter-reg();
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0;
+    margin: 0;
+
+    animation: slideUp 1s;
+    -webkit-animation: slideUp 1s;
+    -moz-animation: slideUp 1s;
+    -o-animation: slideUp 1s;
+    -ms-animation: slideUp 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.transparent-rectangle-1, .transparent-rectangle-2, .transparent-rectangle-3 {
+    position: absolute;
+    height: 100%;
+    width: 15vw;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    z-index: 3;
+
+    animation: slideIn 1s;
+    -webkit-animation: slideIn 1s;
+    -moz-animation: slideIn 1s;
+    -o-animation: slideIn 1s;
+    -ms-animation: slideIn 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.transparent-rectangle-2 {
+    width: 25vw;
+    z-index: 2;
+    animation-delay: 0.25s;
+}
+
+.transparent-rectangle-3 {
+    width: 32vw;
+    z-index: 1;
+    animation-delay: 0s;
+}
+
+@media only screen and (min-width: 768px) {
+    .landing-text-container.left-justify {
+        margin-left: 3rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .landing-text-container.left-justify {
+        margin-left: 5rem;
+    }
+}
