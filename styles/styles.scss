@@ -1,5 +1,7 @@
 $blue: #548CFF;
 $light-blue: #57D4FF;
+$gray: #3d3d3d;
+$off-white: #f9f7f5;
 
 @mixin inter-light {
     font-family: 'Inter', sans-serif;
@@ -24,6 +26,11 @@ $light-blue: #57D4FF;
 @mixin inter-extra-bold {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
+}
+
+@mixin inter-black {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
 }
 
 @import "landing";

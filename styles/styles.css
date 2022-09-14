@@ -3,9 +3,9 @@
   width: 100vw;
   margin: 0;
   padding: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#548CFF), to(#57D4FF));
-  background-image: linear-gradient(#548CFF, #57D4FF);
+  background-image: linear-gradient(45deg, #548CFF, #57D4FF);
   position: relative;
+  z-index: 1;
 }
 
 .landing-text-container.left-justify {
@@ -110,12 +110,20 @@
   z-index: 99;
 }
 
+.nav-item.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .nav-link {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   color: #303030;
   font-size: 1rem;
-  padding: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  border-radius: 0.6rem;
 }
 
 .nav-link.white {
@@ -125,7 +133,15 @@
 .nav-link.active {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  border-bottom: 2px white solid;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.nav-link.active:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 @keyframes slideIn {
@@ -178,10 +194,70 @@
 
 .projects-container {
   width: 100vw;
+  min-height: 20vh;
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #f9f7f5;
   position: relative;
+}
+
+.projects-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #3d3d3d;
+  margin: 0;
+  line-height: 100%;
+}
+
+.project-card {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 10vh;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0px 10px 10px 0.5px rgba(60, 60, 60, 0.03);
+  -webkit-box-shadow: 0px 10px 10px 0.5px rgba(60, 60, 60, 0.03);
+}
+
+.project-card-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #3d3d3d;
+  margin: 0;
+  line-height: 110%;
+}
+
+.project-card-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #3d3d3d;
+  margin: 0;
+  line-height: 120%;
+}
+
+.project-card-image-container {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: white;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.project-card-image {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 0.25rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .projects-container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 html {
