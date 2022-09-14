@@ -1,65 +1,131 @@
 .projects-container {
-    width: 100vw;
-    min-height: 20vh;
+    width:100vw;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     background-color: $off-white;
-    position: relative;
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
 }
 
-.projects-title {
-    @include inter-black();
+.project-title {
+    @include inter-extra-bold();
     font-size: 3rem;
     color: $gray;
-    margin: 0;
-    line-height: 100%;
-}
-
-.project-card {
-    display: inline-block;
-    vertical-align: top;
-    min-height: 10vh;
-    background-color: white;
-    border-radius: 1rem;
-
-    box-shadow: 0px 10px 10px 0.5px rgba(60,60,60,0.03); 
-    -webkit-box-shadow: 0px 10px 10px 0.5px rgba(60,60,60,0.03); 
-}
-
-.project-card-title {
-    @include inter-black();
-    font-size: 1.5rem;
-    color: $gray;
-    margin: 0;
+    opacity: 0;
+    margin:0;
     line-height: 110%;
+
+    // background: -webkit-linear-gradient(45deg, $blue, $light-blue);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    
+    // animation: slideUp 1s;
+    // -webkit-animation: slideUp 1s;
+    // -moz-animation: slideUp 1s;
+    // -o-animation: slideUp 1s;
+    // -ms-animation: slideUp 1s;
+    // animation-iteration-count: 1;
+    // animation-delay: 0;
+    // This makes CSS attribute changes made by animations
+    // stick after the animation is complete
+    animation-fill-mode: forwards;
 }
 
-.project-card-subtitle {
+.project-subtitle {
+    @include inter-extra-bold();
+    font-size: 1.25rem;
+    color: $light-gray;
+    margin: 0;
+    line-height: 130%;
+}
+
+.project-subtitle.gradient {
+    background: -webkit-linear-gradient(45deg, $blue, $light-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.project-text {
     @include inter-reg();
     font-size: 1rem;
     color: $gray;
     margin: 0;
-    line-height: 120%;
+    line-height: 130%;
 }
 
-.project-card-image-container {
-    width: 100%;
+.project-page-image {
+    position: relative;
+    // width: 80%;
     height: auto;
-    display: block;
-    background-color: white;
-    border-radius: 1rem 1rem 0 0;
+    display: inline;
+    z-index: 1;
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px 20px 3px rgba(60,60,60,0.06); 
+    -webkit-box-shadow: 0px 10px 20px 3px rgba(60,60,60,0.06); 
+
+    transition: all 0.5s ease;
+
+    &:hover{
+        // transform: scale(1.01) skew(-1.2deg) rotate(0.4deg);
+        transform: scale(1.01);
+    }
 }
 
-.project-card-image {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    border-radius: 0.25rem;
+.project-image-background {
+    position: absolute;
+    // min-width: 80%;
+    min-height: 100%;
+    background-color: red;
+    display: inline;
+    border-radius: 0.5rem;
+    transform: rotate(3deg) translateX(-0.2%) scale(1.02);
 }
 
-@media only screen and (min-width: 992px) {
-    .projects-container {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+#jackson-pools {
+    background-color: $jackson-blue;
+   color: $jackson-blue;
+}
+
+#pontem {
+    background-color: $pontem-purple;
+    color: $pontem-purple;
+}
+
+#vis {
+    background-color: $vis-blue;
+    color: $vis-blue;
+}
+
+@media only screen and (max-width: 1399px) {
+    .project-title {
+        font-size: 2.75rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .project-page-image, .project-image-background {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+    .project-page-image, .project-image-background {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .project-page-image, .project-image-background {
+        width: 80%;
+    }
+
+    .projects-column-left {
+        padding-right: 3rem !important;
+    }
+
+    .projects-column-right {
+        padding-left: 3rem !important;
     }
 }

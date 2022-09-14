@@ -1,7 +1,11 @@
 $blue: #548CFF;
 $light-blue: #57D4FF;
 $gray: #3d3d3d;
+$light-gray: #494949;
 $off-white: #f9f7f5;
+$jackson-blue: rgba(31, 38, 82, 0.95);
+$pontem-purple: rgba(176, 172, 246, 0.95);
+$vis-blue: rgba(82, 181, 207, 0.95);
 
 @mixin inter-light {
     font-family: 'Inter', sans-serif;
@@ -36,10 +40,11 @@ $off-white: #f9f7f5;
 @import "landing";
 @import "navbar";
 @import "animations";
+@import "projectsgallery";
 @import "projects";
 
 html {
-    font-size: 15px;
+    // font-size: 1px;
     height: 100%;
 }
 
@@ -88,6 +93,6 @@ a {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     html {
-        font-size: 13px;
+        font-size: 14x;
     }
 }
