@@ -21,6 +21,7 @@
     opacity: 0;
     margin:0;
     line-height: 100%;
+    z-index: 5;
     
     animation: slideUp 1s;
     -webkit-animation: slideUp 1s;
@@ -40,6 +41,7 @@
     color: white;
     opacity: 0;
     margin: 0;
+    z-index: 5;
 
     animation: slideUp 1s;
     -webkit-animation: slideUp 1s;
@@ -71,6 +73,7 @@
     -ms-animation: slideIn 1s;
     animation-iteration-count: 1;
     animation-delay: 0.5s;
+    animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
 

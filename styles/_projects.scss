@@ -2,10 +2,9 @@
     width:100vw;
     min-height: 100vh;
     margin: 0;
-    padding: 0;
     background-color: $off-white;
-    padding-top: 3.5rem !important;
-    padding-bottom: 3.5rem !important;
+    padding-top: 10rem !important;
+    padding-bottom: 10rem !important;
 }
 
 .project-title {
@@ -55,7 +54,7 @@
     font-size: 1rem;
     color: $gray;
     margin: 0;
-    line-height: 130%;
+    line-height: 160%;
 }
 
 .project-page-image {
@@ -85,8 +84,11 @@
     // transform: rotate(3deg) translateX(1.5%) translateY(2%) scale(0.99);
     background-image: linear-gradient(45deg, $blue, $light-blue);
 
-    box-shadow: 0px 10px 20px 3px rgba(60,60,60,0.08); 
-    -webkit-box-shadow: 0px 10px 20px 3px rgba(60,60,60,0.08); 
+    // box-shadow: 0px 10px 20px 3px rgba(60,60,60,0.08); 
+    // -webkit-box-shadow: 0px 10px 20px 3px rgba(60,60,60,0.08); 
+
+    box-shadow: 6px 10px 5px 0px rgba(60,60,60,0.05); 
+    -webkit-box-shadow: 6px 10px 5px 0px rgba(60,60,60,0.05);
 }
 
 .project-image-background-gray {
@@ -99,8 +101,20 @@
     // background-image: linear-gradient(45deg, $blue, $light-blue);
     background-color: $off-white;
 
-    box-shadow: 0px 10px 20px 3px rgba(60,60,60,0.08); 
-    -webkit-box-shadow: 0px 10px 20px 3px rgba(60,60,60,0.08); 
+    // Old drop shadow
+    // box-shadow: 0px 10px 20px 3px rgba(60,60,60,0.08); 
+    // -webkit-box-shadow: 0px 10px 20px 3px rgba(60,60,60,0.08); 
+
+    box-shadow: 6px 10px 5px 0.5px rgba(60,60,60,0.06); 
+    -webkit-box-shadow: 6px 10px 5px 0.5px rgba(60,60,60,0.06); 
+}
+
+.contact-container {
+    width:100vw;
+    margin: 0;
+    background-color: $off-white;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
 }
 
 @media only screen and (max-width: 1399px) {
