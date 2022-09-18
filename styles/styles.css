@@ -556,10 +556,14 @@
   box-shadow: 0px 8px 6px 0.5px rgba(60, 60, 60, 0.04);
   -webkit-box-shadow: 0px 8px 6px 0.5px rgba(60, 60, 60, 0.04);
   position: relative;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 .resume-card:hover {
   cursor: pointer !important;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .resume-card-glare {
@@ -580,6 +584,46 @@
   opacity: 0.15;
 }
 
+.transparent-rectangle-resume-1, .transparent-rectangle-resume-2, .transparent-rectangle-resume-3 {
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  animation: slideIn 1s;
+  -webkit-animation: slideIn 1s;
+  -moz-animation: slideIn 1s;
+  -o-animation: slideIn 1s;
+  -ms-animation: slideIn 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.transparent-rectangle-resume-2 {
+  width: 25%;
+  z-index: 2;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.transparent-rectangle-resume-3 {
+  width: 32%;
+  z-index: 1;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
 .contact-card {
   background-color: white;
   border-radius: 0.5rem;
@@ -587,10 +631,14 @@
   position: relative;
   box-shadow: 0px 8px 6px 0.5px rgba(60, 60, 60, 0.04);
   -webkit-box-shadow: 0px 8px 6px 0.5px rgba(60, 60, 60, 0.04);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .contact-card:hover {
   cursor: pointer !important;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .contact-card-glare {
@@ -627,7 +675,6 @@
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #3d3d3d;
   opacity: 1;
   margin: 0;
   line-height: 110%;

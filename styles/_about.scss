@@ -75,8 +75,11 @@
     -webkit-box-shadow: 0px 8px 6px 0.5px rgba(60,60,60,0.04); 
     position: relative;
 
+    transition: all 0.15s ease;
+
     &:hover{
         cursor: pointer !important;
+        transform: scale(1.02);
     }
 }
 
@@ -98,6 +101,43 @@
     }
 }
 
+.transparent-rectangle-resume-1, .transparent-rectangle-resume-2, .transparent-rectangle-resume-3 {
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    // display: block;
+
+    animation: slideIn 1s;
+    -webkit-animation: slideIn 1s;
+    -moz-animation: slideIn 1s;
+    -o-animation: slideIn 1s;
+    -ms-animation: slideIn 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+}
+
+.transparent-rectangle-resume-2 {
+    width: 25%;
+    z-index: 2;
+    animation-delay: 0.25s;
+}
+
+.transparent-rectangle-resume-3 {
+    width: 32%;
+    z-index: 1;
+    animation-delay: 0s;
+}
+
 .contact-card {
     background-color: white;
     border-radius: 0.5rem;
@@ -106,8 +146,11 @@
     box-shadow: 0px 8px 6px 0.5px rgba(60,60,60,0.04); 
     -webkit-box-shadow: 0px 8px 6px 0.5px rgba(60,60,60,0.04); 
 
+    transition: all 0.2s ease;
+
     &:hover{
         cursor: pointer !important;
+        transform: scale(1.03);
     }
 }
 
@@ -142,13 +185,16 @@
 .contact-title {
     @include inter-semi();
     font-size: 1.1rem;
-    color: $gray;
+    // color: $gray;
     opacity: 1;
     margin: 0;
     line-height: 110%;
     display: inline-block;
+    // background: -webkit-linear-gradient(45deg, $blue, $light-blue);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    
 }
-
 
 @media only screen and (max-width: 1399px) {
     .project-title {
