@@ -44,7 +44,7 @@
     @include inter-extra-bold();
     font-size: 3rem;
     color: $gray;
-    opacity: 1;
+    // opacity: 1;
     margin: 0;
     line-height: 110%;
     display: inline-block;
@@ -54,7 +54,7 @@
     @include inter-extra-bold();
     font-size: 3rem;
     color: $gray;
-    opacity: 1;
+    // opacity: 1;
     margin: 0;
     line-height: 110%;
 
@@ -81,6 +81,18 @@
         cursor: pointer !important;
         transform: scale(1.02);
     }
+
+    opacity: 0;
+    animation: slideUp 1s;
+    -webkit-animation: slideUp 1s;
+    -moz-animation: slideUp 1s;
+    -o-animation: slideUp 1s;
+    -ms-animation: slideUp 1s;
+    animation-iteration-count: 1;
+    // animation-delay: 0.5s;
+    // animation-timing-function: ease-out;
+    animation-timing-function: cubic-bezier(0.000, 0.000, 0.255, 0.995); /* custom */
+    animation-fill-mode: forwards;
 }
 
 .resume-card-glare {
@@ -101,6 +113,38 @@
     }
 }
 
+.about-column-left {
+    opacity: 0;
+     
+    animation: slideInRight 1s;
+    -webkit-animation: slideInRight 1s;
+    -moz-animation: slideInRight 1s;
+    -o-animation: slideInRight 1s;
+    -ms-animation: slideInRight 1s;
+    animation-iteration-count: 1;
+    // animation-delay: 0.5s;
+    animation-timing-function: cubic-bezier(0.000, 0.000, 0.000, 0.995); /* custom */
+    animation-fill-mode: forwards;
+}
+
+#about-page-title, #about-page-body {
+    opacity: 0;
+    animation: slideUp 1s;
+    -webkit-animation: slideUp 1s;
+    -moz-animation: slideUp 1s;
+    -o-animation: slideUp 1s;
+    -ms-animation: slideUp 1s;
+    animation-iteration-count: 1;
+    // animation-delay: 0.5s;
+    // animation-timing-function: ease-out;
+    animation-timing-function: cubic-bezier(0.000, 0.000, 0.255, 0.995); /* custom */
+    animation-fill-mode: forwards;
+}
+
+#about-page-body {
+    animation-delay: 0.1s;
+}
+
 .transparent-rectangle-resume-1, .transparent-rectangle-resume-2, .transparent-rectangle-resume-3 {
     position: absolute;
     height: 100%;
@@ -114,13 +158,13 @@
     z-index: 3;
     // display: block;
 
-    animation: slideIn 1s;
-    -webkit-animation: slideIn 1s;
-    -moz-animation: slideIn 1s;
-    -o-animation: slideIn 1s;
-    -ms-animation: slideIn 1s;
+    animation: slideInRectangles 1s;
+    -webkit-animation: slideInRectangles 1s;
+    -moz-animation: slideInRectangles 1s;
+    -o-animation: slideInRectangles 1s;
+    -ms-animation: slideInRectangles 1s;
     animation-iteration-count: 1;
-    animation-delay: 0.5s;
+    animation-delay: 0.75s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
 
@@ -129,13 +173,13 @@
 .transparent-rectangle-resume-2 {
     width: 25%;
     z-index: 2;
-    animation-delay: 0.25s;
+    animation-delay: 0.5s;
 }
 
 .transparent-rectangle-resume-3 {
     width: 32%;
     z-index: 1;
-    animation-delay: 0s;
+    animation-delay: 0.25s;
 }
 
 .contact-card {
@@ -152,6 +196,26 @@
         cursor: pointer !important;
         transform: scale(1.03);
     }
+
+    opacity: 0;
+    animation: slideUp 1s;
+    -webkit-animation: slideUp 1s;
+    -moz-animation: slideUp 1s;
+    -o-animation: slideUp 1s;
+    -ms-animation: slideUp 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0.15s;
+    // animation-timing-function: ease-out;
+    animation-timing-function: cubic-bezier(0.000, 0.000, 0.255, 0.995); /* custom */
+    animation-fill-mode: forwards;
+}
+
+#contact-card-2 {
+    animation-delay: 0.25s;
+}
+
+#contact-card-3 {
+    animation-delay: 0.35s;
 }
 
 .contact-card-glare {

@@ -23,11 +23,11 @@
     line-height: 100%;
     z-index: 5;
     
-    animation: slideUp 1s;
-    -webkit-animation: slideUp 1s;
-    -moz-animation: slideUp 1s;
-    -o-animation: slideUp 1s;
-    -ms-animation: slideUp 1s;
+    animation: slideUpHome 1s;
+    -webkit-animation: slideUpHome 1s;
+    -moz-animation: slideUpHome 1s;
+    -o-animation: slideUpHome 1s;
+    -ms-animation: slideUpHome 1s;
     animation-iteration-count: 1;
     animation-delay: 0;
     // This makes CSS attribute changes made by animations
@@ -43,11 +43,11 @@
     margin: 0;
     z-index: 5;
 
-    animation: slideUp 1s;
-    -webkit-animation: slideUp 1s;
-    -moz-animation: slideUp 1s;
-    -o-animation: slideUp 1s;
-    -ms-animation: slideUp 1s;
+    animation: slideUpHome 1s;
+    -webkit-animation: slideUpHome 1s;
+    -moz-animation: slideUpHome 1s;
+    -o-animation: slideUpHome 1s;
+    -ms-animation: slideUpHome 1s;
     animation-iteration-count: 1;
     animation-delay: 0.25s;
     animation-fill-mode: forwards;
@@ -66,14 +66,14 @@
     z-index: 3;
     display: block;
 
-    animation: slideIn 1s;
-    -webkit-animation: slideIn 1s;
-    -moz-animation: slideIn 1s;
-    -o-animation: slideIn 1s;
-    -ms-animation: slideIn 1s;
+    animation: slideInRectangles 1s;
+    -webkit-animation: slideInRectangles 1s;
+    -moz-animation: slideInRectangles 1s;
+    -o-animation: slideInRectangles 1s;
+    -ms-animation: slideInRectangles 1s;
     animation-iteration-count: 1;
     animation-delay: 0.5s;
-    animation-timing-function: ease;
+    animation-timing-function: cubic-bezier(0.000, 0.000, 0.255, 0.995);
     animation-fill-mode: forwards;
 }
 
