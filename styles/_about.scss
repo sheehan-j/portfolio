@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     background-color: $off-white;
-    padding-top: 10rem !important;
+    // padding-top: 7rem !important;
     padding-bottom: 0rem !important;
 }
 
@@ -74,6 +74,7 @@
     box-shadow: 0px 8px 6px 0.5px rgba(60,60,60,0.04); 
     -webkit-box-shadow: 0px 8px 6px 0.5px rgba(60,60,60,0.04); 
     position: relative;
+    display: block;
 
     transition: all 0.15s ease;
 
@@ -100,7 +101,7 @@
     background-color: $gray;
     height: 100%;
     width: 100%;
-    z-index: 1;
+    z-index: 99;
     position: absolute;
     top: 0;
     left: 0;
@@ -249,7 +250,7 @@
 .contact-title {
     @include inter-semi();
     font-size: 1.1rem;
-    // color: $gray;
+    color: $gray;
     opacity: 1;
     margin: 0;
     line-height: 110%;
@@ -289,6 +290,9 @@
         padding-left: 2rem !important;
         padding-right: 2rem !important;
     }
+    .about-container {
+        padding-top: 6rem !important;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px){
@@ -309,11 +313,19 @@
     .about-image-background{
         transform: rotate(3deg) translateX(14%) translateY(0%) scaleX(0.85);
     }
+
+    .about-container {
+        padding-top: 14rem !important;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1399px) {
     .about-page-image, .about-image-background, .about-image-background-gray {
         width: 60%;
+    }
+
+    .about-container {
+        padding-top: 8rem !important;
     }
     .about-image-background{
         transform: rotate(3deg) translateX(11%) translateY(0%) scale(0.99) scaleX(0.9);
@@ -323,6 +335,10 @@
 @media only screen and (min-width: 1400px) {
     .about-page-image, .about-image-background, .about-image-background-gray {
         width: 80%;
+    }
+
+    .about-container {
+        padding-top: 6rem !important;
     }
 
     .about-column-left {
