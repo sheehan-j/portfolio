@@ -1,11 +1,15 @@
+.about-wrapper {
+    min-height: 100vh;
+}
+
 .about-container {
     width:100vw;
-    // min-height: 100vh;
     margin: 0;
     padding: 0;
     background-color: $off-white;
+    position: relative;
     // padding-top: 7rem !important;
-    padding-bottom: 0rem !important;
+    // padding-bottom: 0rem !important;
 }
 
 .about-page-image {

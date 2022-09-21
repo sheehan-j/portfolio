@@ -1,0 +1,29 @@
+.footer-container {
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.footer-link {
+    @include inter-reg();
+    color: $gray;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    border-radius: 0.6rem;
+
+    &.active {
+        @include inter-semi();
+        background-color: rgba(0,0,0,0.1);
+    }
+
+    &.active:hover {
+        // color: #303030;
+    }
+
+    &:hover {
+        background-color: rgba(0,0,0,0.1);
+        color: #303030;
+    }
+}

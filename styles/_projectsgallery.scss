@@ -8,7 +8,7 @@
 }
 
 .projects-gallery-title {
-    @include inter-black();
+    @include inter-extra-bold();
     font-size: 3rem;
     // color: $gray;
     margin: 0;
@@ -28,28 +28,16 @@
     // transition: transform 0.15s ease !important; ** Cannot change this because it affects animation duration of on-scroll animations
 
     &:hover {
-        transform: scale(1.01) skew(-0.3deg) !important;
-        -webkit-transform: scale(1.01) skew(-0.3deg) !important;
-        -moz-transform: scale(1.01) skew(-0.3deg) !important;
-        cursor: pointer !important;
-        animation-play-state: running;
+        // transform: scale(1.01) skew(-0.3deg);
+        // -webkit-transform: scale(1.01) skew(-0.3deg);
+        // -moz-transform: scale(1.01) skew(-0.3deg);
+        // cursor: pointer !important;
+        // animation-play-state: running;
     }
 
     box-shadow: 0px 8px 6px 0.5px rgba(60,60,60,0.04); 
     -webkit-box-shadow: 0px 8px 6px 0.5px rgba(60,60,60,0.04); 
 
-}
-
-.scale-wrapper {
-    transition: transform 0.15s ease !important;
-
-    &:hover {
-        transform: scale(1.01) skew(-0.3deg) !important;
-        -webkit-transform: scale(1.01) skew(-0.3deg) !important;
-        -moz-transform: scale(1.01) skew(-0.3deg) !important;
-        cursor: pointer !important;
-        animation-play-state: running;
-    }
 }
 
 .project-card-glare {
