@@ -140,7 +140,7 @@
 }
 @media only screen and (max-width: 991px) {
   .home-landing-container {
-    height: 93vh;
+    height: 80vh;
   }
 }
 .navbar {
