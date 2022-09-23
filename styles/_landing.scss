@@ -8,6 +8,8 @@
     // box-shadow: 0px 10px 20px 3px rgba(60,60,60,0.06); 
     // -webkit-box-shadow: 0px 10px 20px 3px rgba(60,60,60,0.06); 
     z-index: 1; // So the box-shadow is visible
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 .landing-text-container.left-justify {
@@ -87,6 +89,31 @@
     width: 32vw;
     z-index: 1;
     animation-delay: 0s;
+}
+
+#arrow-1, #arrow-2, #arrow-3 {
+    opacity: 0;
+    animation: pulse 2s;
+    -webkit-animation: pulse 2s;
+    -moz-animation: pulse 2s;
+    -o-animation: pulse 2s;
+    -ms-animation: pulse 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    margin: 0;
+    position: absolute;
+    bottom: 0.25rem;
+}
+
+#arrow-2 {
+    animation-delay: 1.5s;
+    bottom: 1.15rem;
+}
+
+#arrow-3 {
+    animation-delay: 3s;
+    bottom: 2.15rem;
 }
 
 @media only screen and (min-width: 768px) {

@@ -6,6 +6,8 @@
   background-image: linear-gradient(45deg, #548CFF, #57D4FF);
   position: relative;
   z-index: 1;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .landing-text-container.left-justify {
@@ -94,6 +96,36 @@
   z-index: 1;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
+}
+
+#arrow-1, #arrow-2, #arrow-3 {
+  opacity: 0;
+  animation: pulse 2s;
+  -webkit-animation: pulse 2s;
+  -moz-animation: pulse 2s;
+  -o-animation: pulse 2s;
+  -ms-animation: pulse 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  margin: 0;
+  position: absolute;
+  bottom: 0.25rem;
+}
+
+#arrow-2 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  bottom: 1.15rem;
+}
+
+#arrow-3 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  bottom: 2.15rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -283,6 +315,28 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 .projects-gallery-container {
