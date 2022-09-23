@@ -99,7 +99,7 @@
     -o-animation: pulse 2s;
     -ms-animation: pulse 2s;
     animation-iteration-count: infinite;
-    animation-delay: 0s;
+    animation-delay: 0.8s;
     animation-fill-mode: forwards;
     margin: 0;
     position: absolute;
@@ -107,12 +107,12 @@
 }
 
 #arrow-2 {
-    animation-delay: 1.5s;
+    animation-delay: 0.4s;
     bottom: 1.15rem;
 }
 
 #arrow-3 {
-    animation-delay: 3s;
+    animation-delay: 0s;
     bottom: 2.15rem;
 }
 
