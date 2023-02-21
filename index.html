@@ -1,150 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+		/>
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
 
-        <!-- Typekit Project Link -->
-        <!-- <link rel="stylesheet" href="https://use.typekit.net/dta7tim.css"> -->
+		<!-- Typekit Project Link -->
+		<!-- <link rel="stylesheet" href="https://use.typekit.net/dta7tim.css"> -->
 
-        <!-- Main Stylesheet -->
-        <link rel="stylesheet" href="styles/styles.css">
+		<!-- Main Stylesheet -->
+		<link rel="stylesheet" href="styles/styles.css" />
 
-        <!-- Animate on Scroll (AOS) -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!-- Animate on Scroll (AOS) -->
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
 
-        <!-- Boostrap JS -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha256-XDbijJp72GS2c+Ij234ZNJIyJ1Nv+9+HH1i28JuayMk=" crossorigin="anonymous"></script> -->
+		<!-- Boostrap JS -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha256-XDbijJp72GS2c+Ij234ZNJIyJ1Nv+9+HH1i28JuayMk=" crossorigin="anonymous"></script> -->
 
-        <!-- Inter Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+		<!-- Inter Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
 
-        <title>Jordan Sheehan</title>
-        <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
-    </head>
-    <body>
-        <header>
-            <!-- Main Navbar -->
-            <nav class="navbar navbar-expand py-3">
-                <div id="mainNavbar" class="collapse navbar-collapse justify-content-center">
-                    <ul class="navbar-nav pb-1 py-lg-0">
-                        <li class="nav-item my-2 m-lg-0 px-1 px-lg-2 px-xl-3"><a class="nav-link white active">Home</a></li>
-                        <li class="nav-item my-2 m-lg-0 px-1 px-lg-2 px-xl-3"><a class="nav-link white" href="about.html">About</a></li>
-                    </ul>
-                </div>
-            </nav>
-         </header>
+		<title>Jordan Sheehan</title>
+		<link rel="shortcut icon" type="image/jpg" href="img/favicon.png" />
+	</head>
+	<body>
+		<header>
+			<!-- Main Navbar -->
+			<nav class="navbar navbar-expand py-3">
+				<div
+					id="mainNavbar"
+					class="collapse navbar-collapse justify-content-center"
+				>
+					<ul class="navbar-nav pb-1 py-lg-0">
+						<li class="nav-item my-2 m-lg-0 px-1 px-lg-2 px-xl-3">
+							<a class="nav-link white active">Home</a>
+						</li>
+						<li class="nav-item my-2 m-lg-0 px-1 px-lg-2 px-xl-3">
+							<a class="nav-link white" href="about.html"
+								>About</a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 
-        <main>
-            <!-- Landing Container -->
-            <div class="container-fluid p-0 m-0" syle="margin-top: 0 !important">
+		<main>
+			<!-- Landing Container -->
+			<div
+				class="container-fluid p-0 m-0"
+				syle="margin-top: 0 !important"
+			>
+				<div
+					class="home-landing-container d-flex"
+					style="position: relative"
+				>
+					<!-- Text Container for Med Screens and Larger (>=768px)  -->
+					<div
+						class="landing-text-container left-justify d-none d-md-block my-auto"
+					>
+						<div class="landing-title">Jordan Sheehan</div>
+						<div class="landing-subtitle">
+							Computer Science Student at the University of
+							Florida
+						</div>
+					</div>
 
-                <div class="home-landing-container d-flex" style="position: relative;">
-                    <!-- Text Container for Med Screens and Larger (>=768px)  -->
-                    <div class="landing-text-container left-justify d-none d-md-block my-auto">
-                        <div class="landing-title">Jordan Sheehan</div>
-                        <div class="landing-subtitle">Computer Science Student at the University of Florida</div>
-                    </div>
+					<!-- Text Container for Small Screens and Smaller (<=768px)  -->
+					<div
+						class="landing-text-container text-center center-justify d-block d-md-none my-auto mx-auto"
+					>
+						<div class="landing-title">Jordan Sheehan</div>
+						<div class="landing-subtitle px-4">
+							Computer Science Student at the University of
+							Florida
+						</div>
+					</div>
 
-                    <!-- Text Container for Small Screens and Smaller (<=768px)  -->
-                    <div class="landing-text-container text-center center-justify d-block d-md-none my-auto mx-auto">
-                        <div class="landing-title">Jordan Sheehan</div>
-                        <div class="landing-subtitle px-4">Computer Science Student at the University of Florida</div>
-                    </div>
+					<!-- Decorative Rectangles -->
+					<div class="transparent-rectangle-1"></div>
+					<div class="transparent-rectangle-2"></div>
+					<div class="transparent-rectangle-3"></div>
 
-                    <!-- Decorative Rectangles -->
-                    <div class="transparent-rectangle-1"></div>
-                    <div class="transparent-rectangle-2"></div>
-                    <div class="transparent-rectangle-3"></div>
+					<a
+						href="#projects-gallery"
+						style="
+							width: 3rem;
+							position: absolute;
+							bottom: 1rem;
+							display: block;
+							left: 50%;
+							transform: translateX(-50%);
+						"
+					>
+						<img id="arrow-1" src="img/arrow.svg" />
+						<img id="arrow-2" src="img/arrow.svg" />
+						<img id="arrow-3" src="img/arrow.svg" />
+					</a>
+				</div>
 
-                    <a href="#projects-gallery" style="width: 3rem; position: absolute; bottom: 1rem; display: block; left: 50%; transform: translateX(-50%);">
-                        <img id="arrow-1" src="img/arrow.svg"/>
-                        <img id="arrow-2" src="img/arrow.svg"/>
-                        <img id="arrow-3" src="img/arrow.svg"/>
-                    </a>
-                </div>  
+				<div
+					id="projects-gallery"
+					class="projects-gallery-container d-flex justify-content-center row px-3 px-xxl-5"
+				>
+					<div
+						class="col-12 text-center"
+						data-aos="fade-up"
+						data-aos-duration="750"
+						data-aos-delay="0"
+					>
+						<div>
+							<span class="projects-gallery-title">Projects</span>
+						</div>
+					</div>
 
-                <div id="projects-gallery" class="projects-gallery-container d-flex justify-content-center row px-3 px-xxl-5">
+					<!-- NOTE: Images are 16:9 aspect ratio, screenshotted at 1440x900 pixels. -->
+					<div
+						class="project-card col-12 col-md-5 col-lg-4 col-xxl-3 pt-0 px-0 pb-2 my-4 mx-md-1 mx-lg-2 mx-xl-3"
+						data-aos="fade-up"
+						data-aos-duration="750"
+						data-aos-delay="50"
+					>
+						<a href="jacksonpools.html">
+							<div class="project-card-glare"></div>
+							<div
+								id="jackson-pools"
+								class="project-card-image-container py-2 py-lg-3 px-2 px-lg-3 mb-2"
+							>
+								<img
+									class="project-card-image d-block"
+									src="img/jacksonpools.png"
+								/>
+							</div>
+							<div
+								class="project-card-title mb-1 mt-3 mx-4 mx-sm-3 mx-lg-4"
+							>
+								Jackson Pools Company Website
+							</div>
+							<div
+								class="project-card-subtitle mx-4 mx-sm-3 mx-lg-4 mb-2"
+							>
+								Professional portfolio website for Jackson
+								Custom Pools & Outdoor Living, showcasing their
+								previous successful projects.
+							</div>
+						</a>
+					</div>
 
-                    <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="750" data-aos-delay="0">
-                        <div><span class="projects-gallery-title">Projects</span></div> 
-                    </div>
+					<div
+						class="project-card col-12 col-md-5 col-lg-4 col-xxl-3 pt-0 px-0 pb-2 my-4 mx-2 mx-xl-3"
+						data-aos="fade-up"
+						data-aos-duration="750"
+						data-aos-delay="150"
+					>
+						<a href="pontem.html">
+							<div class="project-card-glare"></div>
+							<div
+								id="pontem"
+								class="project-card-image-container py-2 py-lg-3 px-2 px-lg-3 mb-2"
+							>
+								<img
+									class="project-card-image d-block"
+									src="img/pontem.png"
+								/>
+							</div>
+							<div
+								class="project-card-title mb-1 mt-3 mx-4 mx-sm-3 mx-lg-4"
+							>
+								Telemedicine Company Website
+							</div>
+							<div
+								class="project-card-subtitle mx-4 mx-sm-3 mx-lg-4 mb-2"
+							>
+								Website for a fictional telemedicine company,
+								Pontem Medical, illustrating company services,
+								values, and, more.
+							</div>
+						</a>
+					</div>
 
-                    <!-- NOTE: Images are 16:9 aspect ratio, screenshotted at 1440x900 pixels. -->
-                    <div class="project-card col-12 col-md-5 col-lg-4 col-xxl-3 pt-0 px-0 pb-2 my-4 mx-md-1 mx-lg-2 mx-xl-3" data-aos="fade-up" data-aos-duration="750" data-aos-delay="50">
-                        <a href="jacksonpools.html">
-                            <div class="project-card-glare"></div>
-                            <div id="jackson-pools" class="project-card-image-container py-2 py-lg-3 px-2 px-lg-3 mb-2"><img class="project-card-image d-block" src="img/jacksonpools.png"/></div>
-                            <div class="project-card-title mb-1 mt-3 mx-4 mx-sm-3 mx-lg-4">Jackson Pools Company Website</div>
-                            <div class="project-card-subtitle mx-4 mx-sm-3 mx-lg-4 mb-2">Professional portfolio website for Jackson Custom Pools & Outdoor Living, showcasing their previous successful projects.</div>
-                        </a>
-                    </div>
+					<div
+						class="project-card col-12 col-md-5 col-lg-4 col-xxl-3 pt-0 px-0 pb-2 my-4 mx-md-1 mx-lg-2 mx-xl-3"
+						data-aos="fade-up"
+						data-aos-duration="750"
+						data-aos-delay="250"
+					>
+						<a href="vis.html">
+							<div class="project-card-glare"></div>
+							<div
+								id="vis"
+								class="project-card-image-container py-2 py-lg-3 px-2 px-lg-3 mb-2"
+							>
+								<img
+									class="project-card-image d-block"
+									src="img/vis.png"
+								/>
+							</div>
+							<div
+								class="project-card-title mb-1 mt-3 mx-4 mx-sm-3 mx-lg-4"
+							>
+								Electric Car Company Website
+							</div>
+							<div
+								class="project-card-subtitle mx-4 mx-sm-3 mx-lg-4 mb-2"
+							>
+								Competitive website for a fictional electric car
+								company, VIS. Showcases car models and company
+								core values.
+							</div>
+						</a>
+					</div>
 
-                    <div class="project-card col-12 col-md-5 col-lg-4 col-xxl-3 pt-0 px-0 pb-2 my-4 mx-2 mx-xl-3" data-aos="fade-up" data-aos-duration="750" data-aos-delay="150">
-                        <a href="pontem.html">
-                            <div class="project-card-glare"></div>
-                            <div id="pontem" class="project-card-image-container py-2 py-lg-3 px-2 px-lg-3 mb-2"><img class="project-card-image d-block" src="img/pontem.png"/></div>
-                            <div class="project-card-title mb-1 mt-3 mx-4 mx-sm-3 mx-lg-4">Telemedicine Company Website</div>
-                            <div class="project-card-subtitle mx-4 mx-sm-3 mx-lg-4 mb-2">Website for a fictional telemedicine company, Pontem Medical, illustrating company services, values, and, more.</div>
-                       </a>
-                    </div>
+					<div
+						class="project-card col-12 col-md-5 col-lg-4 col-xxl-3 pt-0 px-0 pb-2 my-4 mx-md-1 mx-lg-2 mx-xl-3"
+						data-aos="fade-up"
+						data-aos-duration="750"
+						data-aos-delay="350"
+					>
+						<a href="minesweeper.html">
+							<div class="project-card-glare"></div>
+							<div
+								id="jackson-pools"
+								class="project-card-image-container py-2 py-lg-3 px-2 px-lg-3 mb-2"
+							>
+								<img
+									class="project-card-image d-block"
+									src="img/minesweeper.png"
+								/>
+							</div>
+							<div
+								class="project-card-title mb-1 mt-3 mx-4 mx-sm-3 mx-lg-4"
+							>
+								Minesweeper Game Recreation
+							</div>
+							<div
+								class="project-card-subtitle mx-4 mx-sm-3 mx-lg-4 mb-2"
+							>
+								Recreation of classic Minesweeper using C++ and
+								core concepts like OOP and dynamic memory.
+							</div>
+						</a>
+					</div>
 
-                    <div class="project-card col-12 col-md-5 col-lg-4 col-xxl-3 pt-0 px-0 pb-2 my-4 mx-md-1 mx-lg-2 mx-xl-3" data-aos="fade-up" data-aos-duration="750" data-aos-delay="250">
-                        <a href="vis.html">
-                            <div class="project-card-glare"></div>
-                            <div id="vis" class="project-card-image-container py-2 py-lg-3 px-2 px-lg-3 mb-2"><img class="project-card-image d-block" src="img/vis.png"/></div>
-                            <div class="project-card-title mb-1 mt-3 mx-4 mx-sm-3 mx-lg-4">Electric Car Company Website</div>
-                            <div class="project-card-subtitle mx-4 mx-sm-3 mx-lg-4 mb-2">Competitive website for a fictional electric car company, VIS. Showcases car models and company core values.</div>
-                       </a>
-                    </div>
+					<div
+						class="project-card col-12 col-md-5 col-lg-4 col-xxl-3 pt-0 px-0 pb-2 my-4 mx-2 mx-xl-3"
+						data-aos="fade-up"
+						data-aos-duration="750"
+						data-aos-delay="450"
+					>
+						<a href="imageprocessor.html">
+							<div class="project-card-glare"></div>
+							<div
+								id="pontem"
+								class="project-card-image-container py-2 py-lg-3 px-2 px-lg-3 mb-2"
+							>
+								<img
+									class="project-card-image d-block"
+									src="img/imageprocessor.png"
+								/>
+							</div>
+							<div
+								class="project-card-title mb-1 mt-3 mx-4 mx-sm-3 mx-lg-4"
+							>
+								Image Processing Application
+							</div>
+							<div
+								class="project-card-subtitle mx-4 mx-sm-3 mx-lg-4 mb-2"
+							>
+								C++ application that reads and processes binary
+								data into viewable TGA file format images.
+							</div>
+						</a>
+					</div>
 
-                    <div class="project-card col-12 col-md-5 col-lg-4 col-xxl-3 pt-0 px-0 pb-2 my-4 mx-md-1 mx-lg-2 mx-xl-3" data-aos="fade-up" data-aos-duration="750" data-aos-delay="350">
-                        <a href="minesweeper.html">
-                            <div class="project-card-glare"></div>
-                            <div id="jackson-pools" class="project-card-image-container py-2 py-lg-3 px-2 px-lg-3 mb-2"><img class="project-card-image d-block" src="img/minesweeper.png"/></div>
-                            <div class="project-card-title mb-1 mt-3 mx-4 mx-sm-3 mx-lg-4">Minesweeper Game Recreation</div>
-                            <div class="project-card-subtitle mx-4 mx-sm-3 mx-lg-4 mb-2">Recreation of classic Minesweeper using C++ and core concepts like OOP and dynamic memory.</div>
-                        </a>
-                    </div>
+					<div
+						class="project-card col-12 col-md-5 col-lg-4 col-xxl-3 pt-0 px-0 pb-2 my-4 mx-md-1 mx-lg-2 mx-xl-3"
+						data-aos="fade-up"
+						data-aos-duration="750"
+						data-aos-delay="550"
+					>
+						<a href="dataanalysis.html">
+							<div class="project-card-glare"></div>
+							<div
+								id="vis"
+								class="project-card-image-container py-2 py-lg-3 px-2 px-lg-3 mb-2"
+							>
+								<img
+									class="project-card-image d-block"
+									src="img/pythonproject.png"
+								/>
+							</div>
+							<div
+								class="project-card-title mb-1 mt-3 mx-4 mx-sm-3 mx-lg-4"
+							>
+								Data Analysis with Python
+							</div>
+							<div
+								class="project-card-subtitle mx-4 mx-sm-3 mx-lg-4 mb-2"
+							>
+								Correlational data analysis of the relationship
+								between tree height and plant biodiversity.
+							</div>
+						</a>
+					</div>
+				</div>
 
-                    <div class="project-card col-12 col-md-5 col-lg-4 col-xxl-3 pt-0 px-0 pb-2 my-4 mx-2 mx-xl-3" data-aos="fade-up" data-aos-duration="750" data-aos-delay="450">
-                        <a href="imageprocessor.html">
-                            <div class="project-card-glare"></div>
-                            <div id="pontem" class="project-card-image-container py-2 py-lg-3 px-2 px-lg-3 mb-2"><img class="project-card-image d-block" src="img/imageprocessor.png"/></div>
-                            <div class="project-card-title mb-1 mt-3 mx-4 mx-sm-3 mx-lg-4">Image Processing Application</div>
-                            <div class="project-card-subtitle mx-4 mx-sm-3 mx-lg-4 mb-2">C++ application that reads and processes binary data into viewable TGA file format images.</div>
-                       </a>
-                    </div>
+				<div
+					class="footer-container d-flex py-3 justify-content-center"
+				>
+					<a
+						class="mx-1 mx-lg-2 mx-xxl-3 footer-link active d-inline-block"
+						>Home</a
+					>
+					<a
+						class="mx-1 mx-lg-2 mx-xxl-3 footer-link"
+						href="about.html"
+						>About</a
+					>
+					<a
+						class="mx-1 mx-lg-2 mx-xxl-3 footer-link"
+						href="attributions.html"
+						style="position: absolute; right: 1rem !important"
+						>Attributions</a
+					>
+				</div>
+			</div>
+		</main>
 
-                    <div class="project-card col-12 col-md-5 col-lg-4 col-xxl-3 pt-0 px-0 pb-2 my-4 mx-md-1 mx-lg-2 mx-xl-3" data-aos="fade-up" data-aos-duration="750" data-aos-delay="550">
-                        <a href="dataanalysis.html">
-                            <div class="project-card-glare"></div>
-                            <div id="vis" class="project-card-image-container py-2 py-lg-3 px-2 px-lg-3 mb-2"><img class="project-card-image d-block" src="img/pythonproject.png"/></div>
-                            <div class="project-card-title mb-1 mt-3 mx-4 mx-sm-3 mx-lg-4">Data Analysis with Python</div>
-                            <div class="project-card-subtitle mx-4 mx-sm-3 mx-lg-4 mb-2">Correlational data analysis of the relationship between tree height and plant biodiversity.</div>
-                       </a>
-                    </div>
-
-                </div>
-
-                <div class="footer-container d-flex py-3 justify-content-center">
-                    <a class="mx-1 mx-lg-2 mx-xxl-3 footer-link active d-inline-block">Home</a>
-                    <a class="mx-1 mx-lg-2 mx-xxl-3 footer-link" href="about.html">About</a>
-                    <a class="mx-1 mx-lg-2 mx-xxl-3 footer-link" href="attributions.html" style="position: absolute; right: 1rem !important;">Attributions</a>
-                </div>
-            </div>
-        </main>
-
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-
-    </body> 
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
 </html>
