@@ -1,128 +1,131 @@
 .projects-gallery-container {
-    width: 100vw;
-    min-height: 20vh;
-    margin: 0;
-    padding: 0;
-    background-color: $off-white;
-    position: relative;
+	width: 100vw;
+	min-height: 20vh;
+	margin: 0;
+	padding: 0;
+	background-color: $off-white;
+	position: relative;
 }
 
 .projects-gallery-title {
-    @include inter-extra-bold();
-    font-size: 3rem;
-    // color: $gray;
-    margin: 0;
-    line-height: 100%;
-    background: -webkit-linear-gradient(45deg, $blue, $light-blue);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	@include inter-extra-bold();
+	font-size: 3rem;
+	// color: $gray;
+	margin: 0;
+	line-height: 100%;
+	background: -webkit-linear-gradient(45deg, $blue, $light-blue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .project-card {
-    display: inline-block;
-    vertical-align: top;
-    min-height: 10vh;
-    background-color: white;
-    border-radius: 0.5rem;
+	display: inline-block;
+	vertical-align: top;
+	min-height: 10vh;
+	background-color: white;
+	border-radius: 0.5rem;
 
-    // transition: transform 0.15s ease !important; ** Cannot change this because it affects animation duration of on-scroll animations
+	// transition: transform 0.15s ease !important; ** Cannot change this because it affects animation duration of on-scroll animations
 
-    &:hover {
-        // transform: scale(1.01) skew(-0.3deg);
-        // -webkit-transform: scale(1.01) skew(-0.3deg);
-        // -moz-transform: scale(1.01) skew(-0.3deg);
-        // cursor: pointer !important;
-        // animation-play-state: running;
-    }
+	&:hover {
+		// transform: scale(1.01) skew(-0.3deg);
+		// -webkit-transform: scale(1.01) skew(-0.3deg);
+		// -moz-transform: scale(1.01) skew(-0.3deg);
+		// cursor: pointer !important;
+		// animation-play-state: running;
+	}
 
-    box-shadow: 0px 8px 6px 0.5px rgba(60,60,60,0.04); 
-    -webkit-box-shadow: 0px 8px 6px 0.5px rgba(60,60,60,0.04); 
-
+	box-shadow: 0px 8px 6px 0.5px rgba(60, 60, 60, 0.04);
+	-webkit-box-shadow: 0px 8px 6px 0.5px rgba(60, 60, 60, 0.04);
 }
 
 .project-card-glare {
-    opacity: 0;
-    transition: all 0.15s ease;
-    height: 100%;
-    width: 100%;
-    // background-color: rgb(60,60,60);
-    background-image: linear-gradient(90deg, $blue-extreme, $light-blue-extreme);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    border-radius: 0.5rem;
+	opacity: 0;
+	transition: all 0.15s ease;
+	height: 100%;
+	width: 100%;
+	// background-color: rgb(60,60,60);
+	background-image: linear-gradient(
+		90deg,
+		$blue-extreme,
+		$light-blue-extreme
+	);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	border-radius: 0.5rem;
 
-    &:hover {
-        opacity: 0.18;
-    }
+	&:hover {
+		opacity: 0.18;
+	}
 }
 
 .project-card-title {
-    @include inter-black();
-    font-size: 1.25rem;
-    color: $gray;
-    margin: 0;
-    line-height: 110%;
+	@include inter-black();
+	font-size: 1.25rem;
+	color: $gray;
+	margin: 0;
+	line-height: 110%;
 }
 
 .project-card-subtitle {
-    @include inter-reg();
-    font-size: 1rem;
-    color: $gray;
-    margin: 0;
-    line-height: 120%;
+	@include inter-reg();
+	font-size: 1rem;
+	color: $gray;
+	margin: 0;
+	line-height: 120%;
 }
 
 .project-card-image-container {
-    width: 100%;
-    height: auto;
-    display: block;
-    // background-color: $blue;
-    border-radius: 1rem 1rem 0 0;
-    padding: 0 !important;
-    box-shadow: 0px 10px 5px 0.5px rgba(60,60,60,0.04); 
-    -webkit-box-shadow: 0px 10px 5px 0.5px rgba(60,60,60,0.04); 
+	width: 100%;
+	height: auto;
+	display: block;
+	// background-color: $blue;
+	border-radius: 1rem 1rem 0 0;
+	padding: 0 !important;
+	box-shadow: 0px 10px 5px 0.5px rgba(60, 60, 60, 0.04);
+	-webkit-box-shadow: 0px 10px 5px 0.5px rgba(60, 60, 60, 0.04);
 }
 
 .project-card-image {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    border-radius: 0.5rem 0.5rem 0 0;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	border-radius: 0.5rem 0.5rem 0 0;
 }
 
 @media only screen and (max-width: 350px) {
-    .projects-gallery-container {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
+	.projects-gallery-container {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
 }
 
 @media only screen and (min-width: 351px) and (max-width: 575px) {
-    .projects-gallery-container {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
+	.projects-gallery-container {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px){
-    .projects-gallery-container {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.projects-gallery-container {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .projects-gallery-container {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
+	.projects-gallery-container {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
 }
 
 @media only screen and (min-width: 992px) {
-    .projects-gallery-container {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-    }
+	.projects-gallery-container {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
 }

@@ -28,12 +28,9 @@
   -moz-animation: slideUpHome 1s;
   -o-animation: slideUpHome 1s;
   -ms-animation: slideUpHome 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
 }
 
 .landing-subtitle {
@@ -49,12 +46,9 @@
   -moz-animation: slideUpHome 1s;
   -o-animation: slideUpHome 1s;
   -ms-animation: slideUpHome 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.25s;
+  animation-fill-mode: forwards;
 }
 
 .transparent-rectangle-1, .transparent-rectangle-2, .transparent-rectangle-3 {
@@ -74,28 +68,22 @@
   -moz-animation: slideInRectangles 1s;
   -o-animation: slideInRectangles 1s;
   -ms-animation: slideInRectangles 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995);
-          animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995);
+  animation-fill-mode: forwards;
 }
 
 .transparent-rectangle-2 {
   width: 25vw;
   z-index: 2;
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+  animation-delay: 0.25s;
 }
 
 .transparent-rectangle-3 {
   width: 32vw;
   z-index: 1;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 #arrow-1, #arrow-2, #arrow-3 {
@@ -105,26 +93,21 @@
   -moz-animation: pulse 2s;
   -o-animation: pulse 2s;
   -ms-animation: pulse 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
   margin: 0;
   position: absolute;
   bottom: 0.25rem;
 }
 
 #arrow-2 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
   bottom: 1.15rem;
 }
 
 #arrow-3 {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
   bottom: 2.15rem;
 }
 
@@ -216,16 +199,6 @@
     opacity: 0.1;
   }
 }
-@-webkit-keyframes slideInRectangles {
-  0% {
-    -webkit-transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    opacity: 0.1;
-  }
-}
 @keyframes slideInRight {
   0% {
     transform: translateX(-50%);
@@ -233,16 +206,6 @@
   }
   100% {
     transform: translateX(0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(-50%);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
     opacity: 1;
   }
 }
@@ -256,16 +219,6 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes slideInLeft {
-  0% {
-    -webkit-transform: translateX(50%);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    opacity: 1;
-  }
-}
 @keyframes slideUpHome {
   0% {
     transform: translateY(75%);
@@ -273,16 +226,6 @@
   }
   100% {
     transform: translateY(0);
-    opacity: 0.85;
-  }
-}
-@-webkit-keyframes slideUpHome {
-  0% {
-    -webkit-transform: translateY(75%);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
     opacity: 0.85;
   }
 }
@@ -296,16 +239,6 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes slideUp {
-  0% {
-    -webkit-transform: translateY(7rem);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    opacity: 1;
-  }
-}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -314,26 +247,7 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes pulse {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes pulse {
   0% {
     opacity: 0;
   }
@@ -470,8 +384,7 @@
   color: #3d3d3d;
   margin: 0;
   line-height: 110%;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .project-subtitle {
@@ -521,12 +434,9 @@
   -moz-animation: slideUp 1s;
   -o-animation: slideUp 1s;
   -ms-animation: slideUp 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995);
-          animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
+  animation-fill-mode: forwards;
 }
 .link-card:hover {
   cursor: pointer !important;
@@ -609,37 +519,29 @@
   -moz-animation: slideUp 1s;
   -o-animation: slideUp 1s;
   -ms-animation: slideUp 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995);
-          animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
+  animation-fill-mode: forwards;
 }
 
 #project-animation-order-2 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 
 #project-animation-order-3 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 #project-animation-order-4 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 #project-animation-order-5 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 #project-animation-order-6 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 @media only screen and (max-width: 1399px) {
@@ -656,12 +558,9 @@
     -moz-animation: slideUp 1s;
     -o-animation: slideUp 1s;
     -ms-animation: slideUp 1s;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-    -webkit-animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995);
-            animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
+    animation-fill-mode: forwards;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -694,12 +593,9 @@
     -moz-animation: slideInLeft 1s;
     -o-animation: slideInLeft 1s;
     -ms-animation: slideInLeft 1s;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-    -webkit-animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995);
-            animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
+    animation-fill-mode: forwards;
   }
 }
 .about-wrapper {
@@ -771,12 +667,9 @@
   -moz-animation: slideUp 1s;
   -o-animation: slideUp 1s;
   -ms-animation: slideUp 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995);
-          animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
+  animation-fill-mode: forwards;
 }
 
 .about-container {
@@ -798,12 +691,9 @@
   -moz-animation: slideUp 1s;
   -o-animation: slideUp 1s;
   -ms-animation: slideUp 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995);
-          animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
+  animation-fill-mode: forwards;
 }
 .resume-card:hover {
   cursor: pointer !important;
@@ -833,12 +723,9 @@
   -moz-animation: slideInRight 1s;
   -o-animation: slideInRight 1s;
   -ms-animation: slideInRight 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: cubic-bezier(0, 0, 0, 0.995);
-          animation-timing-function: cubic-bezier(0, 0, 0, 0.995); /* custom */
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0, 0, 0, 0.995); /* custom */
+  animation-fill-mode: forwards;
 }
 
 .transparent-rectangle-resume-1, .transparent-rectangle-resume-2, .transparent-rectangle-resume-3 {
@@ -857,28 +744,22 @@
   -moz-animation: slideInRectangles 1s;
   -o-animation: slideInRectangles 1s;
   -ms-animation: slideInRectangles 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.75s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
 .transparent-rectangle-resume-2 {
   width: 25%;
   z-index: 2;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .transparent-rectangle-resume-3 {
   width: 32%;
   z-index: 1;
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+  animation-delay: 0.25s;
 }
 
 .contact-card {
@@ -895,14 +776,10 @@
   -moz-animation: slideUp 1s;
   -o-animation: slideUp 1s;
   -ms-animation: slideUp 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
-  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995);
-          animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.15s;
+  animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
+  animation-fill-mode: forwards;
 }
 .contact-card:hover {
   cursor: pointer !important;
@@ -910,13 +787,11 @@
 }
 
 #contact-card-2 {
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+  animation-delay: 0.25s;
 }
 
 #contact-card-3 {
-  -webkit-animation-delay: 0.35s;
-          animation-delay: 0.35s;
+  animation-delay: 0.35s;
 }
 
 .contact-card-glare {
@@ -1102,12 +977,9 @@
   -moz-animation: slideUpHome 1s;
   -o-animation: slideUpHome 1s;
   -ms-animation: slideUpHome 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
 }
 
 .attributions-body {
@@ -1130,12 +1002,9 @@
   -moz-animation: slideUp 1s;
   -o-animation: slideUp 1s;
   -ms-animation: slideUp 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995);
-          animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
+  animation-fill-mode: forwards;
 }
 
 .horizontal-line {
@@ -1150,12 +1019,9 @@
   -moz-animation: slideUp 1s;
   -o-animation: slideUp 1s;
   -ms-animation: slideUp 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995);
-          animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
+  animation-fill-mode: forwards;
 }
 
 .attributions-button {
@@ -1173,12 +1039,9 @@
   -moz-animation: slideUp 1s;
   -o-animation: slideUp 1s;
   -ms-animation: slideUp 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995);
-          animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0, 0, 0.255, 0.995); /* custom */
+  animation-fill-mode: forwards;
 }
 .attributions-button:hover {
   cursor: pointer !important;

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+
+		<!-- Typekit Project Link -->
+		<!-- <link rel="stylesheet" href="https://use.typekit.net/dta7tim.css"> -->
+
+		<!-- Main Stylesheet -->
+		<link rel="stylesheet" href="styles/styles.css" />
+
+		<!-- Animate on Scroll (AOS) -->
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Boostrap JS -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha256-XDbijJp72GS2c+Ij234ZNJIyJ1Nv+9+HH1i28JuayMk=" crossorigin="anonymous"></script> -->
+
+		<!-- Inter Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>Task Tracker App</title>
+		<link rel="shortcut icon" type="image/jpg" href="img/favicon.png" />
+	</head>
+	<body>
+		<header>
+			<!-- Main Navbar -->
+			<nav class="navbar navbar-expand py-3">
+				<div
+					id="mainNavbar"
+					class="collapse navbar-collapse justify-content-center"
+				>
+					<a
+						href="index.html#projects-gallery"
+						class="nav-link active"
+						style="position: absolute; left: 1rem"
+						><div class="nav-link-glare"></div>
+						Return to Projects</a
+					>
+					<ul class="navbar-nav pb-1 py-lg-0">
+						<li class="nav-item my-2 m-lg-0 px-1 px-lg-2 px-xl-3">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item my-2 m-lg-0 px-1 px-lg-2 px-xl-3">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div
+				class="container-fluid p-0 m-0"
+				syle="margin-top: 0 !important"
+			>
+				<div
+					class="projects-container flex-column align-items-center flex-xxl-row justify-content-center row px-xxl-5 py-5"
+				>
+					<div
+						class="projects-column-left col-12 col-xxl-5 mb-4 mb-xxl-0 px-5 px-xxl-0 d-flex justify-content-start flex-row"
+					>
+						<div>
+							<div
+								id="project-animation-order-1"
+								class="projects-text-container text-center text-xxl-start p-4"
+							>
+								<!-- <div class="text-center text-xxl-start"> -->
+								<div
+									id="jackson-pools"
+									class="project-subtitle text-center text-xxl-start"
+									style="background-color: #f9f7f5"
+								>
+									<span class="project-subtitle"
+										>EXPO & REACT NATIVE PROJECT</span
+									>
+								</div>
+								<div
+									class="project-title mb-2 text-center text-xxl-start"
+								>
+									Task Tracker App
+								</div>
+								<div
+									class="project-text text-center text-xxl-start px-5 px-xxl-0"
+								>
+									This task tracker mobile app is a personal
+									project I developed and designed. The
+									primary purpose of the app is to allow a
+									user to add tasks with a custom title and
+									description. Tasks can be marked completed
+									and deleted whenever the user chooses. Tasks
+									can also be divided into customizable
+									categories. As tasks are marked completed,
+									an overall task progress bar will
+									automatically update for each category.
+									<br /><br />
+									I created this project primarily to gain
+									more experience using React Native with
+									Expo. Understanding how to structure an Expo
+									app and implement the core components of
+									React Native is important for me, as I
+									intend to create and deploy more substantial
+									mobile applications in the near future. I
+									also utilized Node.js, Express, and MongoDB
+									in developing this app, which allowed for
+									another opportunity to develop my skills in
+									creating APIs.
+								</div>
+							</div>
+							<div class="d-flex">
+								<a
+									href="https://github.com/sheehan-j/task-tracker"
+									target="_blank"
+									style="flex: 1; margin-right: 0.25rem"
+								>
+									<div
+										id="project-animation-order-2"
+										class="link-card py-3 mt-3"
+									>
+										<div class="link-card-glare"></div>
+										<div
+											class="transparent-rectangle-resume-1"
+										></div>
+										<div
+											class="transparent-rectangle-resume-2"
+										></div>
+										<div
+											class="transparent-rectangle-resume-3"
+										></div>
+										<div
+											class="project-link-text text-center w-100"
+										>
+											Link to GitHub Repo
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="projects-column-right col-12 col-xxl-6 mt-4 mt-xxl-0 px-2 px-xxl-0 d-flex justify-content-center"
+						data-aos-delay="0"
+						style="position: relative"
+					>
+						<img
+							src="img/tasktrackerwhite.png"
+							class="project-page-image"
+						/>
+						<div class="project-image-background"></div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>
